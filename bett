@@ -1,0 +1,89 @@
+🧠 Cursor Prompt for Building a Baccarat Predictor (Frontend-Only)
+Create a Baccarat Predictor SPA using React + TypeScript + Tailwind CSS + Framer Motion.
+
+🌐 Project Goals:
+Simulate Baccarat games (no backend).
+Track round-by-round outcomes.
+Predict next round using advanced rule-based logic.
+Show cards dealt, prediction, actual outcome, remaining cards.
+No card images needed—use emojis or text (e.g. “♥ 9”, “♠ A”).
+
+🧭 Website Flow:
+🔹 Home / Game Board:
+“Start Game” button → initializes 8 decks (416 cards).
+
+Display area:
+Remaining cards left in the shoe.
+Current round number.
+Player cards, Banker cards.
+Actual result: Player / Banker / Tie.
+Predicted next result.
+
+“Next Round” button:
+Deals 2 cards to Player + Banker.
+Predicts the next outcome using rules.
+Updates history.
+
+🔹 History Panel:
+Displays outcomes visually: small colored circles or tags.
+🔵 Banker
+🔴 Player
+🟡 Tie
+Animates new result each round (Framer Motion).
+
+🔹 Predictor Engine:
+Predict using the following rule priority:
+✅ Recommended Rule Priority
+
+3+ Streak Rule (Banker or Player): If same winner ≥ 3 rounds, predict it continues.
+Zig-Zag Pattern: If last 3 alternate (e.g., P → B → P), predict the opposite.
+3rd Repeater: If last 2 same, expect third same result.
+Tie Rejection: If last round was a Tie, ignore it in logic.
+
+Random fallback:
+45% Banker
+45% Player
+10% Tie
+
+📈  Advanced Rules (To Add ):
+🧮 Card History Analysis:
+Track remaining card values (1–13 × suits).
+Count high cards vs low cards (A–4 low, 10–K high).
+Predict outcome based on deck balance.
+
+🧩 Derived Roads Simulation (Advanced Baccarat Charts):
+Implement the following patterns with a grid-based UI:
+
+Big Road
+Big Eye Boy
+Small Road
+Cockroach Pig
+Show derived patterns visually like in real casinos.
+
+
+\| Component | Description |
+
+> \|------------------|--------------------------------------------|
+> \| `GameBoard` | Core layout: deck status, round, buttons |
+> \| `PredictionCard` | Predicted outcome (with animation) |
+> \| `ResultCard` | Dealt cards + actual result |
+> \| `HistoryPanel` | History of outcomes |
+> \| `RemainingDeck` | Show cards left in shoe |
+
+🖼 Visual Details:
+Use colored tags/circles for results:
+
+🔴 Player
+🔵 Banker
+🟡 Tie
+
+Use Framer Motion to animate new result cards or prediction fades.
+Clean dark/light mode layout with Tailwind spacing.
+Use grid or flex layouts for visual balance.
+
+🧪 Test Cases:
+Ensure predictions match the rule priority.
+Display prediction before round is dealt.
+Ensure streaks and zig-zag detection work.
+Remaining deck updates per round.
+Results history updates correctly.
