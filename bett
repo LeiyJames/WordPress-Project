@@ -1,89 +1,118 @@
-🧠 Cursor Prompt for Building a Baccarat Predictor (Frontend-Only)
-Create a Baccarat Predictor SPA using React + TypeScript + Tailwind CSS + Framer Motion.
+I'm building a salon website with a complete sales funnel using React.js and Tailwind CSS. The website should have the following structure and features:
 
-🌐 Project Goals:
-Simulate Baccarat games (no backend).
-Track round-by-round outcomes.
-Predict next round using advanced rule-based logic.
-Show cards dealt, prediction, actual outcome, remaining cards.
-No card images needed—use emojis or text (e.g. “♥ 9”, “♠ A”).
+1. **Project Setup**:
+- Create a React.js project with Vite
+- Install Tailwind CSS for styling
+- Set up React Router for page navigation
+- Install react-hook-form for form handling
+- Add react-datepicker for appointment scheduling
 
-🧭 Website Flow:
-🔹 Home / Game Board:
-“Start Game” button → initializes 8 decks (416 cards).
+2. **Page Structure**:
+- Home/Hero page with CTA button
+- Services listing page
+- Stylists profile page
+- Multi-step appointment booking flow
+- Thank you page
 
-Display area:
-Remaining cards left in the shoe.
-Current round number.
-Player cards, Banker cards.
-Actual result: Player / Banker / Tie.
-Predicted next result.
+3. **Core Components**:
+- Header with logo and navigation
+- Footer with contact info and social links
+- Service cards with images, descriptions, and prices
+- Stylist profile cards with specialties
+- Booking progress indicator
+- Responsive design for all screen sizes
 
-“Next Round” button:
-Deals 2 cards to Player + Banker.
-Predicts the next outcome using rules.
-Updates history.
+4. **Booking Funnel Flow**:
+1. Service selection (show categories and popular services)
+2. Stylist selection (recommend based on service)
+3. Date/time selection (using react-datepicker)
+4. Customer information form (with validation)
+5. Booking review and confirmation
+6. Thank you page with booking summary
 
-🔹 History Panel:
-Displays outcomes visually: small colored circles or tags.
-🔵 Banker
-🔴 Player
-🟡 Tie
-Animates new result each round (Framer Motion).
+5. **Technical Requirements**:
+- Use React Context API to manage booking state
+- Implement form validation with react-hook-form
+- Create reusable UI components (buttons, cards, etc.)
+- Add smooth transitions between steps
+- Ensure full mobile responsiveness
 
-🔹 Predictor Engine:
-Predict using the following rule priority:
-✅ Recommended Rule Priority
+6. **Additional Features**:
+- Add loading states for better UX
+- Implement local storage to save booking progress
+- Include success/error notifications
+- Add a "back" button in the booking flow
+- Include a cancellation policy notice
 
-3+ Streak Rule (Banker or Player): If same winner ≥ 3 rounds, predict it continues.
-Zig-Zag Pattern: If last 3 alternate (e.g., P → B → P), predict the opposite.
-3rd Repeater: If last 2 same, expect third same result.
-Tie Rejection: If last round was a Tie, ignore it in logic.
-
-Random fallback:
-45% Banker
-45% Player
-10% Tie
-
-📈  Advanced Rules (To Add ):
-🧮 Card History Analysis:
-Track remaining card values (1–13 × suits).
-Count high cards vs low cards (A–4 low, 10–K high).
-Predict outcome based on deck balance.
-
-🧩 Derived Roads Simulation (Advanced Baccarat Charts):
-Implement the following patterns with a grid-based UI:
-
-Big Road
-Big Eye Boy
-Small Road
-Cockroach Pig
-Show derived patterns visually like in real casinos.
+Please generate:
+1. The initial project setup commands
+2. Key components with Tailwind CSS styling
+3. The booking context to manage state
+4. The multi-step booking flow implementation
+5. Sample data for services and stylists
 
 
-\| Component | Description |
+Now that we have the structure, please help me implement:
 
-> \|------------------|--------------------------------------------|
-> \| `GameBoard` | Core layout: deck status, round, buttons |
-> \| `PredictionCard` | Predicted outcome (with animation) |
-> \| `ResultCard` | Dealt cards + actual result |
-> \| `HistoryPanel` | History of outcomes |
-> \| `RemainingDeck` | Show cards left in shoe |
+1. The BookingContext with state management for the appointment flow
+2. The ServiceSelection component with service cards and selection logic
+3. The DateTimeSelection component with react-datepicker integration
+4. The form validation for customer information
+5. The responsive design for the booking progress indicator
 
-🖼 Visual Details:
-Use colored tags/circles for results:
+Use modern React patterns and clean Tailwind CSS classes. Include comments explaining key parts of the implementation.
 
-🔴 Player
-🔵 Banker
-🟡 Tie
 
-Use Framer Motion to animate new result cards or prediction fades.
-Clean dark/light mode layout with Tailwind spacing.
-Use grid or flex layouts for visual balance.
+Please include all previous requirements and add these new features:
 
-🧪 Test Cases:
-Ensure predictions match the rule priority.
-Display prediction before round is dealt.
-Ensure streaks and zig-zag detection work.
-Remaining deck updates per round.
-Results history updates correctly.
+1. **Before/After Gallery**:
+- Create a dedicated gallery page or section
+- Implement an interactive slider/carousel showing transformations
+- Each item should show:
+  - Before image (left)
+  - After image (right)
+  - Service performed
+  - Stylist name
+  - Client testimonial (optional)
+- Add filtering by service type (haircuts, coloring, treatments)
+- Use react-image-comparison-slider or similar package
+
+2. **Client Reviews**:
+- Create a reviews component showing:
+  - Client photo/avatar
+  - Star rating (1-5)
+  - Review text
+  - Date of service
+  - Service received
+- Implement both:
+  - A reviews section on the homepage (3-5 featured reviews)
+  - A dedicated reviews page with all testimonials
+- Add review submission form for new clients
+- Include sorting options (newest, highest rated)
+
+
+Please generate:
+1. The BeforeAfterSlider component with interactive comparison
+2. The ReviewCard component with star rating display
+3. The GalleryFilter component for service type filtering
+4. The ReviewForm component with validation
+5. Integration of these components into the existing layout
+
+
+
+For the implementation, please:
+
+1. Use Framer Motion for smooth gallery transitions
+2. Implement the star rating system using react-icons
+3. Add proper image lazy loading for gallery items
+4. Create mobile-responsive layouts for both new features
+5. Include state management for review submissions
+6. Add share buttons for gallery transformations
+7. Implement automatic review sorting based on selected option
+8. Add skeleton loaders for gallery images
+
+For the before/after slider, ensure:
+- Mobile touch support
+- Drag handle with custom styling
+- Percentage labels option
+- Keyboard accessibility
