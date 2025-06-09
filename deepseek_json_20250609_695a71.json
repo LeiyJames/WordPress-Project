@@ -1,0 +1,96 @@
+{
+  "clothing_products": [
+    {
+      "id": 1,
+      "name": "Classic White T-Shirt",
+      "price": 299.00,
+      "description": "100% cotton plain white t-shirt, comfortable for everyday wear. Available in sizes S to XL."
+    },
+    {
+      "id": 2,
+      "name": "Low-Rise Distressed Jeans (Y2K Style)",
+      "price": 1499.00,
+      "description": "Vintage-inspired low-rise jeans with distressed details and flared legs. Perfect for 2000s fashion revival."
+    },
+    {
+      "id": 3,
+      "name": "Frosted Pink Mini Skirt (Y2K Aesthetic)",
+      "price": 799.00,
+      "description": "Shimmery pink mini skirt with a playful Y2K vibe. Great for retro-themed outfits."
+    },
+    {
+      "id": 4,
+      "name": "Oversized Denim Jacket (Vintage Wash)",
+      "price": 1799.00,
+      "description": "90s-inspired oversized denim jacket with a faded wash and distressed accents."
+    },
+    {
+      "id": 5,
+      "name": "Velour Tracksuit (Y2K Juicy Couture Style)",
+      "price": 2499.00,
+      "description": "Soft velour tracksuit with a fitted zip-up hoodie and matching pants. Retro early 2000s look."
+    },
+    {
+      "id": 6,
+      "name": "Vintage Band Graphic Tee",
+      "price": 699.00,
+      "description": "Distressed vintage-style band t-shirt with a faded print for a retro grunge look."
+    },
+    {
+      "id": 7,
+      "name": "Y2K Bucket Hat",
+      "price": 399.00,
+      "description": "Nylon bucket hat with a colorful print, inspired by early 2000s streetwear."
+    },
+    {
+      "id": 8,
+      "name": "Plaid Mini Skirt (90s Grunge)",
+      "price": 649.00,
+      "description": "Checkered mini skirt with a high waist, perfect for a 90s-inspired grunge outfit."
+    },
+    {
+      "id": 9,
+      "name": "Chunky Platform Sneakers (Y2K Style)",
+      "price": 2199.00,
+      "description": "Thick-soled sneakers with bold colors, reminiscent of early 2000s fashion trends."
+    },
+    {
+      "id": 10,
+      "name": "Cropped Cardigan (Vintage Knit)",
+      "price": 899.00,
+      "description": "Cozy cropped cardigan with a retro knit pattern, ideal for layering."
+    },
+    {
+      "id": 11,
+      "name": "Y2K Butterfly Top",
+      "price": 599.00,
+      "description": "Sheer mesh top with butterfly prints, a nostalgic nod to early 2000s fashion."
+    },
+    {
+      "id": 12,
+      "name": "Baggy Cargo Pants (Y2K Streetwear)",
+      "price": 1299.00,
+      "description": "Oversized cargo pants with multiple pockets, inspired by 2000s hip-hop fashion."
+    },
+    {
+      "id": 13,
+      "name": "Vintage Sunglasses (Oversized Frame)",
+      "price": 899.00,
+      "description": "Oversized tinted sunglasses with a retro 90s/Y2K aesthetic."
+    },
+    {
+      "id": 14,
+      "name": "Faux Fur Coat (Y2K Glam)",
+      "price": 2899.00,
+      "description": "Shaggy faux fur coat in pastel pink, reminiscent of early 2000s celebrity fashion."
+    },
+    {
+      "id": 15,
+      "name": "Chain Belt (Y2K Accessory)",
+      "price": 349.00,
+      "description": "Metal chain belt for layering over low-rise jeans, a staple in 2000s fashion."
+    }
+  ],
+  "currency": "PHP",
+  "note": "Prices are indicative and may vary depending on retailer and promotions."
+}
